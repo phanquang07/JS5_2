@@ -49,10 +49,7 @@ function tinhTienCap() {
       var chanelPre = 50 * chanelNum
       var services = ''
 
-      if (numConnect < 10) {
-        alert('số kết nối phải từ 10 trở lên')
-        return
-      } else if (numConnect === 10) {
+      if (numConnect <= 10) {
         services = 75
       } else if (numConnect > 10) {
         services = 75 + (numConnect - 10) * 5
