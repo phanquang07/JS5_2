@@ -12,19 +12,19 @@ function tinhThue() {
 
   if (thuNhapChiuThue < 0) {
     thueCaNhan = 0
-  } else if (thuNhapChiuThue <= 60) {
-    thueCaNhan = Math.round(thuNhapChiuThue * 0.5)
-  } else if (thuNhapChiuThue > 60 && thuNhapChiuThue <= 120) {
-    thueCaNhan = Math.round(thuNhapChiuThue * 0.10)
-  } else if (thuNhapChiuThue > 120 && thuNhapChiuThue <= 210) {
+  } else if (thuNhapChiuThue <= 60000000) {
+    thueCaNhan = Math.round(thuNhapChiuThue * 0.05)
+  } else if (thuNhapChiuThue > 60000000 && thuNhapChiuThue <= 120000000) {
+    thueCaNhan = Math.round(thuNhapChiuThue * 0.1)
+  } else if (thuNhapChiuThue > 120000000 && thuNhapChiuThue <= 210000000) {
     thueCaNhan = Math.round(thuNhapChiuThue * 0.15)
-  } else if (thuNhapChiuThue > 210 && thuNhapChiuThue <= 384) {
-    thueCaNhan = Math.round(thuNhapChiuThue * 0.20)
-  } else if (thuNhapChiuThue > 384 && thuNhapChiuThue <= 624) {
+  } else if (thuNhapChiuThue > 210000000 && thuNhapChiuThue <= 384000000) {
+    thueCaNhan = Math.round(thuNhapChiuThue * 0.2)
+  } else if (thuNhapChiuThue > 384000000 && thuNhapChiuThue <= 624000000) {
     thueCaNhan = Math.round(thuNhapChiuThue * 0.25)
-  } else if (thuNhapChiuThue > 624 && thuNhapChiuThue <= 960) {
-    thueCaNhan = Math.round(thuNhapChiuThue * 0.30)
-  } else if (thuNhapChiuThue > 960) {
+  } else if (thuNhapChiuThue > 624000000 && thuNhapChiuThue <= 960000000) {
+    thueCaNhan = Math.round(thuNhapChiuThue * 0.3)
+  } else if (thuNhapChiuThue > 960000000) {
     thueCaNhan = Math.round(thuNhapChiuThue * 0.35)
   }
 
@@ -71,7 +71,7 @@ function tinhTienCap() {
 
   document.querySelector('#cableBill').innerHTML = `
     Mã KH: ${maKH} <br>
-    Tổng tiền: ${billTotal}
+    Tổng tiền: ${billTotal}$
   `
 }
 
