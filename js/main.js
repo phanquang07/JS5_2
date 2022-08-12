@@ -43,6 +43,9 @@ function tinhTienCap() {
   var billTotal = ''
 
   switch (type) {
+    case '0':
+      alert('Hãy chọn kiểu khách hàng')
+      break;
     case '1':
       var numConnect = Number(document.querySelector('#inputNum').value)
       var billFee = 15
